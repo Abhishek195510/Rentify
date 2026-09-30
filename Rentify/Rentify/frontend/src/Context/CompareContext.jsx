@@ -28,3 +28,4 @@ export const CompareProvider = ({ children }) => {
         </CompareContext.Provider>
     );
 };
+// modified
