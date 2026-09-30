@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────────────────
+   DARK MODE — triggered by html[data-theme="dark"]
+   Covers every Tailwind bg-white, text-gray-*, border, etc.
+───────────────────────────────────────────────────────── */
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Page backgrounds */
+html[data-theme="dark"] body,
+html[data-theme="dark"] .min-h-screen,
+html[data-theme="dark"] .bg-white,
+html[data-theme="dark"] .bg-gray-50,
+html[data-theme="dark"] .bg-gray-100 {
+  background-color: #0b0c10 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Navbar */
+html[data-theme="dark"] .fixed.bg-white,
+html[data-theme="dark"] nav.bg-white {
+  background-color: #0f1117 !important;
+  border-bottom-color: rgba(255,255,255,0.07) !important;
+}
+
+/* Cards */
+html[data-theme="dark"] .rounded-2xl.bg-white,
+html[data-theme="dark"] .rounded-3xl.bg-white,
+html[data-theme="dark"] .group.bg-white {
+  background-color: #16171c !important;
+}
+
+/* Text colors */
+html[data-theme="dark"] .text-gray-900,
+html[data-theme="dark"] .text-gray-800 {
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] .text-gray-700,
+html[data-theme="dark"] .text-gray-600 {
+  color: #94a3b8 !important;
+}
+html[data-theme="dark"] .text-gray-500,
+html[data-theme="dark"] .text-gray-400 {
+  color: #64748b !important;
+}
+
+/* Borders */
+html[data-theme="dark"] .border-gray-100,
+html[data-theme="dark"] .border-gray-200 {
+  border-color: rgba(255,255,255,0.07) !important;
+}
+
+/* Search input box */
+html[data-theme="dark"] input[type="text"],
+html[data-theme="dark"] input[type="number"],
+html[data-theme="dark"] input[type="date"],
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background-color: #1e2030 !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(255,255,255,0.1) !important;
+}
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+  color: #475569 !important;
+}
+
+/* Search box border on navbar */
+html[data-theme="dark"] .border.rounded-full.bg-white {
+  background-color: #1a1d27 !important;
+  border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Dropdown */
+html[data-theme="dark"] .absolute.bg-white.rounded-2xl {
+  background-color: #1a1d27 !important;
+  border-color: rgba(255,255,255,0.08) !important;
+}
+html[data-theme="dark"] .hover\:bg-gray-50:hover {
+  background-color: rgba(255,255,255,0.05) !important;
+}
+html[data-theme="dark"] .bg-gray-50 {
+  background-color: #12141a !important;
+}
+html[data-theme="dark"] .border-gray-50 {
+  border-color: rgba(255,255,255,0.05) !important;
+}
+
+/* Popup / dropdown menu */
+html[data-theme="dark"] .w-56.absolute.bg-white {
+  background-color: #1a1d27 !important;
+  border-color: rgba(255,255,255,0.08) !important;
+}
+
+/* Card shadows become softer in dark */
+html[data-theme="dark"] .shadow-md,
+html[data-theme="dark"] .shadow-sm,
+html[data-theme="dark"] .shadow-lg {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+}
+
+/* Category filter pills */
+html[data-theme="dark"] .bg-gray-100.text-gray-600 {
+  background-color: rgba(255,255,255,0.06) !important;
+  color: #94a3b8 !important;
+}
+
+/* "List your home" link */
+html[data-theme="dark"] .hover\:bg-gray-100:hover {
+  background-color: rgba(255,255,255,0.05) !important;
+}
+
+/* Location filter bar */
+html[data-theme="dark"] .sticky.bg-white {
+  background-color: #0f1117 !important;
+  border-bottom-color: rgba(255,255,255,0.07) !important;
+}
+
+/* Stars/ratings chip */
+html[data-theme="dark"] .bg-amber-50,
+html[data-theme="dark"] .border-amber-100 {
+  background-color: rgba(245,158,11,0.12) !important;
+  border-color: rgba(245,158,11,0.25) !important;
+}
+
+/* Divider lines */
+html[data-theme="dark"] .h-px.bg-gray-100,
+html[data-theme="dark"] .bg-gray-200 {
+  background-color: rgba(255,255,255,0.07) !important;
+}
+
+/* Booked badge */
+html[data-theme="dark"] .bg-emerald-500 {
+  background-color: #059669 !important;
+}
+
+/* Distance badge */
+html[data-theme="dark"] .bg-white\/95 {
+  background-color: rgba(26,29,39,0.95) !important;
+}
+
+/* Category color pills stay vibrant */
+html[data-theme="dark"] .bg-blue-100 { background-color: rgba(59,130,246,0.15) !important; }
+html[data-theme="dark"] .bg-purple-100 { background-color: rgba(139,92,246,0.15) !important; }
+html[data-theme="dark"] .bg-amber-100 { background-color: rgba(245,158,11,0.15) !important; }
+html[data-theme="dark"] .bg-green-100 { background-color: rgba(16,185,129,0.15) !important; }
+
+/* Scrollbar */
+html[data-theme="dark"] ::-webkit-scrollbar-track { background: #0b0c10; }
+html[data-theme="dark"] ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
+html[data-theme="dark"] ::-webkit-scrollbar { width: 5px; }
+
+/* Nav hamburger button */
+html[data-theme="dark"] button.bg-white {
+  background-color: #1a1d27 !important;
+  border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* date picker indicator light */
+html[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+/* Transition all for smooth toggle */
+*, *::before, *::after {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.2s ease;
+}
